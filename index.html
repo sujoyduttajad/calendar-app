@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calendar App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="styles/all.css">
+    </head>
+    <body>
+        <nav class="header"><h1>Calendar App - Choose your dates</h1></nav>
+       <div class="calendar disable-selection" id="calendar">
+           
+           <div class="left-side">
+               <div class="current-day text-center">
+                    <h1 class="calendar-left-side-day"></h1>
+                    <div class="calendar-left-side-day-of-week"></div>    
+               </div>
+               <div class="current-day-events">
+                   <div>Current Events: </div>
+                   <ul class="current-day-events-list"></ul>
+               </div>
+               <div class="add-event-day">
+                   <input type="text" class="add-event-day-field" placeholder="Create and Event"/>
+                   <span class="fa fa-plus-circle cursor-pointer add-event-day-field-btn"></span>
+               </div>
+           </div>
+           <div class="right-side">
+               <div class="text-right calendar-change-year">
+                   <div class="calendar-change-year-slider">
+                    <span class="fa fa-caret-left cursor-pointer calendar-change-year-slider-prev"></span>
+                    <span class="calendar-current-year"></span>
+                    <span class="fa fa-caret-right cursor-pointer calendar-change-year-slider-next"></span>
+                   </div>
+               </div>
+
+                <div class="calendar-month-list">
+                    <ul class="calendar-month">
+                    </ul>
+                </div>
+                <div class="calendar-week-list">
+                    <ul class="calendar-week">
+                    </ul>
+                </div>
+                <div class="calendar-day-list">
+                    <ul class="calendar-days">
+                    </ul>
+                </div>
+           </div>
+       </div>
+        
+        <script src="scripts/all.js" async defer></script>
+    </body>
+</html>
